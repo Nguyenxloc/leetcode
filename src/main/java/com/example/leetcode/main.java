@@ -4,6 +4,6 @@ public class main {
 
     public static void main(String[] args) {
         romanToInt rm  = new romanToInt();
-        System.out.println(rm.romanToInt("XIX"));
+        System.out.println(rm.romanToInt("MCMXCIV"));
     }
 }

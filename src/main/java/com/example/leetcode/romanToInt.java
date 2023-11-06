@@ -46,7 +46,7 @@ public class romanToInt {
                              convert(strs[i])>100&&convert(strs[i-1])==100){
                          minusCell +=  convert(strs[i])-convert(strs[i-1]);
                          strInt.remove(strInt.size()-1);
-                         strInt.remove(strInt.size()-2);
+                         strInt.remove(strInt.size()-1);
 //                         System.out.println(strInt.get(strInt.size()-1));
 //                         System.out.println(strInt.get(strInt.size()-2));
                      }
@@ -54,7 +54,6 @@ public class romanToInt {
              }
         for (int i = 0; i < strInt.size(); i++) {
             sumCell+=strInt.get(i);
-            System.out.println("sum"+strInt.get(i));
         }
         rs = minusCell+sumCell;
         return rs ;
